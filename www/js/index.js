@@ -90,6 +90,7 @@ var app = {
     };
 
     img.src = 'icon.png'; //img
+	canvas.style.alignmentAdjust="center";
 } ,
 	
 	orintation2:function ()
