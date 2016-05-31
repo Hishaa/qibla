@@ -89,7 +89,7 @@ var app = {
       
     };
 
-    img.src = 'icon.png'; //img
+    img.src = 'qibla.jpg'; //img
 } ,
 	
 	orintation2:function ()
