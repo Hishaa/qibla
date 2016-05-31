@@ -33,7 +33,7 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        app.receivedEvent('deviceready');
+        //app.receivedEvent('deviceready');
 		
 		
 		//app.orintation();
@@ -64,7 +64,7 @@ var app = {
       
     };
 
-    img.src = 'icon.png'; //img
+    img.src = 'qibla-finder-praying-direction-art-work.jpg'; //img
 } ,
 	
 		 changeAngle2:function  (angle) {
@@ -153,7 +153,7 @@ function onError(error) {
 navigator.geolocation.getCurrentPosition(onSuccess, onError);
 	},
     // Update DOM on a Received Event
-    receivedEvent: function(id) {
+   /* receivedEvent: function(id) {
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
@@ -162,5 +162,5 @@ navigator.geolocation.getCurrentPosition(onSuccess, onError);
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
-    }
+    }*/
 };
