@@ -64,7 +64,7 @@ var app = {
       
     };
 
-    img.src = 'qibla.jpg'; //img
+    img.src = 'icon.png'; //img
 } ,
 	
 		 changeAngle2:function  (angle) {
@@ -89,7 +89,7 @@ var app = {
       
     };
 
-    img.src = 'qibla.jpg'; //img
+    img.src = 'icon.png'; //img
 } ,
 	
 	orintation2:function ()
