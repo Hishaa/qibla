@@ -64,7 +64,7 @@ var app = {
       
     };
 
-    img.src = 'qibla-finder-praying-direction-art-work.jpg'; //img
+    img.src = 'qibla.jpg'; //img
 } ,
 	
 		 changeAngle2:function  (angle) {
