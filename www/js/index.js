@@ -37,7 +37,7 @@ var app = {
 		
 		
 		//app.orintation();
-		//app.geodirection();
+		 app.geodirection();
 
 	    app.orintation2();		
     },
@@ -90,7 +90,7 @@ var app = {
     };
 
     img.src = 'icon.png'; //img
-	canvas.style.alignmentAdjust="center";
+	//canvas.style.alignmentAdjust="center";
 } ,
 	
 	orintation2:function ()
@@ -126,6 +126,13 @@ navigator.compass.getCurrentHeading(onSuccess, onError);
 	},
 	
 	
+	calculateAngle:function(l,q)
+	{
+		tanq= (sin(39.83-l)/(cos(39.83-l)*sin(q)-.3925*cos(q)));
+		angle= atan(tanq);
+	},
+	
+	
 		geodirection:function (){
 			alert("Welcome");
 	
@@ -142,6 +149,12 @@ var onSuccess = function(position) {
           'Heading: '           + position.coords.heading           + '\n' +
           'Speed: '             + position.coords.speed             + '\n' +
           'Timestamp: '         + position.timestamp                + '\n');
+		  
+		  var l=position.coords.latitude;
+		  var q=position.coords.longitude;
+		  tanq= (sin(39.83-l)/(cos(39.83-l)*sin(q)-.3925*cos(q)));
+		  angle= atan(tanq);
+		document.getElementById("anglvlaue").innerHTML=angle;
 };
 
 // onError Callback receives a PositionError object
